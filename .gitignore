@@ -1,5 +1,6 @@
 .next
 dist
+.vinext
 .wrangler
 node_modules
 *.log
