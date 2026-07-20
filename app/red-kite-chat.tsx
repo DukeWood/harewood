@@ -37,7 +37,7 @@ function answerFor(input: string): Message {
     return { role: "bot", text: "Life in Harewood brings together a close village community, open countryside, red kites, local walks, play spaces and nearby places to meet. The Village Hall sits at the heart of that life, hosting classes, celebrations and community events.", link: { label: "See life in Harewood", href: "#village-life" } };
   }
   if (/(event|class|what's on|whats on|pantomime|ceilidh)/.test(q)) {
-    return { role: "bot", text: "The June and July 2026 Hall diaries include weekly dance, drama, Pilates, Tai Chi and martial arts sessions. July also features Wine and Cheese at HVH, Harewood Year 6 Leavers and a Harewood PCC Meeting. Browse every date in calendar or event-card view.", link: { label: "View the Hall diary", href: "#events" } };
+    return { role: "bot", text: "The published June, July and August 2026 Hall diaries include regular classes and community activities. August features Three Ridings Hearing Tests, Harrogate Canine, Tai Chi and the Village Exercise Team. Browse every date in calendar or event-card view.", link: { label: "View the Hall diary", href: "#events" } };
   }
   if (/(volunteer|help|involved)/.test(q)) {
     return { role: "bot", text: "The Hall is always looking for volunteers to help bring its community vision to life. Contact Olga and share how you would like to help — they’ll find a role that suits you.", link: { label: "Email the Hall", href: "mailto:hanbury88@btinternet.com" } };
@@ -64,7 +64,9 @@ export function RedKiteChat() {
     return () => handlers.forEach((el) => el.removeEventListener("click", show));
   }, []);
 
-  useEffect(() => endRef.current?.scrollIntoView({ behavior: "smooth" }), [messages, typing]);
+  useEffect(() => {
+    endRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages, typing]);
 
   function send(text = input) {
     const clean = text.trim();
