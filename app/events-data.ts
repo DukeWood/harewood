@@ -93,3 +93,17 @@ export const july2026Events: HallEvent[] = [
   { id: "jul-29-tai", day: 29, title: "Tai Chi", time: "12:00pm–1:00pm", category: "Class" },
   { id: "jul-31-exercise", day: 31, title: "Village Exercise Team", time: "6:00pm–7:00pm", category: "Community" },
 ];
+
+export const august2026Events: HallEvent[] = [
+  { id: "aug-01-hearing", day: 1, title: "Three Ridings Hearing Tests", time: "9:30am–4:00pm", category: "Community", note: "Starting time moved to later." },
+  { id: "aug-03-canine", day: 3, title: "Harrogate Canine", time: "7:00pm–10:00pm", category: "Class" },
+  { id: "aug-05-tai", day: 5, title: "Tai Chi with TV", time: "12:00pm–1:00pm", category: "Class", note: "Colin is on holiday." },
+  { id: "aug-07-exercise", day: 7, title: "Village Exercise Team", time: "6:00pm–7:00pm", category: "Community" },
+  { id: "aug-12-tai", day: 12, title: "Tai Chi with TV", time: "12:00pm–1:00pm", category: "Class", note: "Colin is on holiday." },
+  { id: "aug-14-exercise", day: 14, title: "Village Exercise Team", time: "6:00pm–7:00pm", category: "Community" },
+  { id: "aug-19-tai", day: 19, title: "Tai Chi", time: "12:00pm–1:00pm", category: "Class" },
+  { id: "aug-21-exercise", day: 21, title: "Village Exercise Team", time: "6:00pm–7:00pm", category: "Community" },
+  { id: "aug-26-tai", day: 26, title: "Tai Chi", time: "12:00pm–1:00pm", category: "Class" },
+  { id: "aug-28-exercise", day: 28, title: "Village Exercise Team", time: "6:00pm–7:00pm", category: "Community" },
+  { id: "aug-31-bank-holiday", day: 31, title: "Summer Bank Holiday", time: "All day", category: "Community", note: "Marked in the published Hall diary." },
+];
