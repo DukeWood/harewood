@@ -6,11 +6,13 @@ import { NeighbourhoodLife } from "./neighbourhood-life";
 import {
   ArrowRight,
   BedDouble,
+  BookOpen,
   BusFront,
   CalendarDays,
   Check,
   Clock3,
   Coffee,
+  Crown,
   ExternalLink,
   GraduationCap,
   HeartHandshake,
@@ -125,12 +127,13 @@ export default function Home() {
             <a href="#booking">Book</a>
             <a href="#events">What&apos;s on</a>
             <a href="#village-life">Village life</a>
+            <a href="#about-village">About the village</a>
             <a href="#contact">Contact</a>
           </nav>
           <a className="button button-dark nav-cta" href="#hire">Hire the hall <ArrowRight size={16} /></a>
           <details className="mobile-menu">
             <summary aria-label="Open navigation"><Menu /></summary>
-            <nav><a href="#hall">The Hall</a><a href="#booking">Book</a><a href="#events">What&apos;s on</a><a href="#village-life">Village life</a><a href="#contact">Contact</a></nav>
+            <nav><a href="#hall">The Hall</a><a href="#booking">Book</a><a href="#events">What&apos;s on</a><a href="#village-life">Village life</a><a href="#about-village">About the village</a><a href="#contact">Contact</a></nav>
           </details>
         </div>
       </header>
@@ -212,6 +215,67 @@ export default function Home() {
 
       <NeighbourhoodLife />
 
+      <section className="village-about section" id="about-village">
+        <div className="shell village-about-heading">
+          <div>
+            <span className="section-kicker">About the village</span>
+            <h2>Deep roots.<br /><em>An open sky.</em></h2>
+          </div>
+          <p>Harewood is a historic North Leeds village where stone buildings, wooded parkland and everyday community life sit side by side — connected to Leeds and Harrogate, yet with a character entirely its own.</p>
+        </div>
+
+        <div className="shell village-about-visual">
+          <figure className="village-about-landscape">
+            <img src="/neighbourhood/evening-over-harewood.webp" alt="Evening light across the rural Harewood landscape" />
+            <figcaption><span>Harewood · LS17</span><strong>Village, parkland and a living landscape</strong></figcaption>
+          </figure>
+          <div className="village-about-intro">
+            <span>Then &amp; now</span>
+            <p>The Harewood story stretches from Saxon landholders and Norman foundations to a medieval castle, an 18th-century country house and a village community that still gathers, learns, walks and celebrates together.</p>
+            <a href="https://harewood.org/about/history/" target="_blank" rel="noreferrer">Explore the Harewood timeline <ExternalLink size={15} /></a>
+          </div>
+        </div>
+
+        <div className="shell village-history-grid">
+          <article>
+            <div className="village-history-icon"><BookOpen /></div>
+            <span>Centuries of place</span>
+            <h3>From Saxon Harewood</h3>
+            <p>Tor, Sprot and Grim are recorded as Harewood&apos;s Saxon landholders in the Domesday story. All Saints&apos; Church carries the known history from Norman times, while Harewood Castle and Gawthorpe Hall reveal the older landscape.</p>
+            <a href="https://harewood.org/about/history/" target="_blank" rel="noreferrer">Read the official history <ExternalLink size={14} /></a>
+          </article>
+          <article>
+            <div className="village-history-icon"><Crown /></div>
+            <span>Royal connections</span>
+            <h3>A Princess Royal at home</h3>
+            <p>Princess Mary, daughter of King George V and Queen Mary, married Henry Lascelles in 1922. Harewood became their Yorkshire home in 1930, and royal family visits left a living memorial in the trees of the Royal Avenue.</p>
+            <a href="https://harewood.org/stories/the-royal-avenue/" target="_blank" rel="noreferrer">Discover the Royal Avenue <ExternalLink size={14} /></a>
+          </article>
+          <article>
+            <div className="village-history-icon"><Trees /></div>
+            <span>Life in LS17</span>
+            <h3>Country calm, community energy</h3>
+            <p>Local schools, a recreation ground, playground, free tennis court and village organisations give Harewood its everyday rhythm. Footpaths, mature trees and broad views keep the countryside close.</p>
+            <a href="https://harewoodparishcouncil.gov.uk/amenities/" target="_blank" rel="noreferrer">See parish amenities <ExternalLink size={14} /></a>
+          </article>
+        </div>
+
+        <div className="shell history-truth-note">
+          <Landmark />
+          <div><span>A history told in full</span><strong>Heritage includes difficult truths.</strong></div>
+          <p>Harewood House was built in the 18th century with wealth made through Caribbean sugar plantations and the exploitation of enslaved African people. The Harewood House Trust now researches and shares that legacy openly.</p>
+          <a href="https://harewood.org/about/legacy-of-the-caribbean/" target="_blank" rel="noreferrer">Learn more <ArrowRight size={15} /></a>
+        </div>
+
+        <div className="shell village-sources">
+          <span>Research sources</span>
+          <a href="https://historicengland.org.uk/listing/the-list/list-entry/1001218" target="_blank" rel="noreferrer">Historic England</a>
+          <a href="https://www.leeds.gov.uk/planning/conservation-protection-and-heritage/conservation-area" target="_blank" rel="noreferrer">Leeds conservation areas</a>
+          <a href="https://harewood.org/about/history/" target="_blank" rel="noreferrer">Harewood House Trust</a>
+          <a href="https://harewoodparishcouncil.gov.uk/" target="_blank" rel="noreferrer">Harewood Parish Council</a>
+        </div>
+      </section>
+
       <section className="red-kite-band">
         <div className="shell kite-band-grid">
           <div className="kite-illustration"><KiteMark /></div>
@@ -275,14 +339,23 @@ export default function Home() {
       </section>
 
       <footer>
+        <div className="shell footer-callout">
+          <div><span>Bring people together</span><h2>Planning something in Harewood?</h2></div>
+          <div><a className="button button-red" href="#booking">Check a date <ArrowRight size={16} /></a><button className="footer-chat-link" data-open-red-kite>Ask Red Kite <Sparkles size={15} /></button></div>
+        </div>
         <div className="shell footer-main">
-          <div className="brand footer-brand"><KiteMark /><span><strong>Harewood</strong><small>Village Hall</small></span></div>
-          <p>A space for the community, on Church Lane in Harewood.</p>
-          <div className="footer-links"><a href="#hall">The Hall</a><a href="#events">What&apos;s on</a><a href="#harewood">Explore</a><a href="/privacy">Privacy</a></div>
+          <div className="footer-intro">
+            <div className="brand footer-brand"><KiteMark /><span><strong>Harewood</strong><small>Village Hall</small></span></div>
+            <p>A community-run place to meet, make and belong — in the heart of Harewood village.</p>
+            <a href="https://maps.google.com/?q=Harewood+Village+Hall+Church+Lane+Leeds+LS17+9LX" target="_blank" rel="noreferrer"><MapPin size={14} /> Church Lane, Harewood, Leeds LS17 9LX</a>
+          </div>
+          <div className="footer-column"><strong>The Hall</strong><a href="#hall">Inside the Hall</a><a href="#booking">Book the Hall</a><a href="#events">Hall diary</a><a href="#contact">Contact</a></div>
+          <div className="footer-column"><strong>Harewood</strong><a href="#village-life">Village life</a><a href="#about-village">About the village</a><a href="#harewood">Local directory</a><a href="https://harewoodparishcouncil.gov.uk/" target="_blank" rel="noreferrer">Parish Council</a></div>
+          <div className="footer-column footer-contact"><strong>Talk to us</strong><a href="tel:+447496275356">07496 275356</a><a href="mailto:hanbury88@btinternet.com">hanbury88@btinternet.com</a><button data-open-red-kite><Sparkles size={14} /> Ask Red Kite</button></div>
         </div>
         <div className="shell footer-bottom">
-          <span>© 2026 Harewood Village Hall</span>
-          <span>Community information last reviewed 18 July 2026</span>
+          <span>© 2026 Harewood Village Hall · Community run</span>
+          <div><a href="/privacy">Privacy</a><span>Community information reviewed 20 July 2026</span></div>
         </div>
       </footer>
       <RedKiteChat />
