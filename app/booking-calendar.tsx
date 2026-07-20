@@ -23,9 +23,8 @@ function formatDate(date: Date) {
 }
 
 export function BookingCalendar() {
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  const [month, setMonth] = useState(new Date(today.getFullYear(), today.getMonth(), 1));
+  const today = new Date(2026, 6, 20);
+  const [month, setMonth] = useState(() => new Date(2026, 6, 1));
   const [selected, setSelected] = useState<Selected>(null);
   const [step, setStep] = useState<"calendar" | "details" | "done">("calendar");
   const [eventType, setEventType] = useState("Family celebration");
