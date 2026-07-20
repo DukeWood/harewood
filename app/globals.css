@@ -352,6 +352,42 @@ img { display: block; width: 100%; }
 .life-callout-copy > div > a:last-child { display: inline-flex; align-items: center; gap: 8px; border-bottom: 1px solid rgba(255,255,255,.5); padding-bottom: 5px; font-size: 10px; font-weight: 800; }
 .life-callout-copy > div > a:last-child svg { width: 14px; }
 
+.village-about { position: relative; overflow: hidden; background: var(--paper); }
+.village-about::before { position: absolute; top: 0; left: 7%; width: 1px; height: 190px; content: ""; background: var(--line); }
+.village-about-heading { display: grid; grid-template-columns: 1.05fr .95fr; gap: 100px; align-items: end; }
+.village-about-heading h2 { margin-top: 18px; font-size: clamp(50px, 6.2vw, 78px); line-height: .96; }
+.village-about-heading h2 em { color: var(--red); font-weight: 400; }
+.village-about-heading > p { margin: 0; color: var(--muted); font-family: var(--display); font-size: 18px; line-height: 1.68; }
+.village-about-visual { min-height: 500px; display: grid; grid-template-columns: 1.45fr .55fr; margin-top: 62px; box-shadow: var(--shadow); }
+.village-about-landscape { position: relative; min-height: 500px; overflow: hidden; margin: 0; background: var(--stone); }
+.village-about-landscape::after { position: absolute; inset: 35% 0 0; content: ""; background: linear-gradient(transparent, rgba(7,32,26,.78)); }
+.village-about-landscape img { width: 100%; height: 100%; object-fit: cover; }
+.village-about-landscape figcaption { position: absolute; right: 34px; bottom: 30px; left: 34px; z-index: 1; display: flex; flex-direction: column; color: #fff; }
+.village-about-landscape figcaption span { font-size: 8px; font-weight: 850; letter-spacing: .16em; text-transform: uppercase; }
+.village-about-landscape figcaption strong { margin-top: 7px; font-family: var(--display); font-size: 28px; font-weight: 400; }
+.village-about-intro { display: flex; flex-direction: column; justify-content: center; padding: 48px; background: var(--forest); color: #fff; }
+.village-about-intro > span { color: #f1a091; font-size: 9px; font-weight: 850; letter-spacing: .16em; text-transform: uppercase; }
+.village-about-intro p { margin: 22px 0; color: rgba(255,255,255,.68); font-family: var(--display); font-size: 17px; line-height: 1.68; }
+.village-about-intro a { display: inline-flex; align-items: center; gap: 8px; align-self: flex-start; border-bottom: 1px solid rgba(255,255,255,.5); padding-bottom: 5px; font-size: 9px; font-weight: 800; }
+.village-history-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); margin-top: 18px; }
+.village-history-grid article { min-height: 410px; display: flex; flex-direction: column; align-items: flex-start; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 38px; background: #fff; }
+.village-history-icon { width: 48px; height: 48px; display: grid; place-items: center; margin-bottom: 42px; background: var(--cream); color: var(--forest); }
+.village-history-icon svg { width: 20px; }
+.village-history-grid article > span { color: var(--red); font-size: 8px; font-weight: 850; letter-spacing: .15em; text-transform: uppercase; }
+.village-history-grid h3 { margin: 12px 0 15px; font-family: var(--display); font-size: 27px; font-weight: 400; line-height: 1.1; }
+.village-history-grid p { margin: 0; color: var(--muted); font-family: var(--display); font-size: 15px; line-height: 1.66; }
+.village-history-grid a { display: inline-flex; align-items: center; gap: 7px; margin-top: auto; border-bottom: 1px solid var(--forest); padding-bottom: 4px; font-size: 9px; font-weight: 800; }
+.history-truth-note { display: grid; grid-template-columns: 50px 210px 1fr auto; gap: 24px; align-items: center; margin-top: 18px; padding: 31px 36px; background: var(--cream); }
+.history-truth-note > svg { color: var(--red); }
+.history-truth-note > div { display: flex; flex-direction: column; }
+.history-truth-note > div span { color: var(--red); font-size: 8px; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; }
+.history-truth-note > div strong { margin-top: 6px; font-family: var(--display); font-size: 18px; font-weight: 400; }
+.history-truth-note p { margin: 0; color: var(--muted); font-size: 10px; line-height: 1.62; }
+.history-truth-note a { display: inline-flex; align-items: center; gap: 7px; font-size: 9px; font-weight: 800; white-space: nowrap; }
+.village-sources { display: flex; align-items: center; gap: 20px; border-top: 1px solid var(--line); margin-top: 34px; padding-top: 17px; color: var(--muted); font-size: 8px; }
+.village-sources span { margin-right: auto; color: var(--forest); font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
+.village-sources a { border-bottom: 1px solid var(--line); padding-bottom: 3px; }
+
 .red-kite-band { position: relative; overflow: hidden; padding: 78px 0; background: var(--red); color: #fff; }
 .red-kite-band::after { position: absolute; top: -140px; right: -50px; width: 370px; height: 370px; border: 1px solid rgba(255,255,255,.18); border-radius: 50%; content: ""; }
 .kite-band-grid { display: grid; grid-template-columns: 130px 1fr 340px; gap: 50px; align-items: center; }
@@ -398,13 +434,26 @@ img { display: block; width: 100%; }
 .enquiry-card .button { align-self: flex-start; }
 .enquiry-card > small { color: var(--muted); font-size: 8px; }
 
-footer { padding: 58px 0 25px; background: #08271f; color: #fff; }
-.footer-main { display: grid; grid-template-columns: 260px 1fr auto; gap: 40px; align-items: center; }
+footer { padding: 0 0 25px; background: #08271f; color: #fff; }
+.footer-callout { min-height: 190px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,.1); }
+.footer-callout > div:first-child > span { color: #f1a091; font-size: 9px; font-weight: 850; letter-spacing: .16em; text-transform: uppercase; }
+.footer-callout h2 { margin-top: 10px; color: #fff; font-size: 38px; }
+.footer-callout > div:last-child { display: flex; align-items: center; gap: 22px; }
+.footer-chat-link { display: inline-flex; align-items: center; gap: 7px; border: 0; border-bottom: 1px solid rgba(255,255,255,.5); padding: 6px 0; background: transparent; color: #fff; font-size: 9px; font-weight: 800; cursor: pointer; }
+.footer-main { display: grid; grid-template-columns: 1.7fr repeat(3, 1fr); gap: 54px; align-items: start; padding-top: 58px; }
 .footer-brand .kite-mark { color: #f1a091; }
 .footer-brand strong { color: #fff; }
-.footer-main > p { color: rgba(255,255,255,.48); font-family: var(--display); font-size: 14px; }
-.footer-links { display: flex; gap: 25px; color: rgba(255,255,255,.72); font-size: 10px; }
+.footer-intro > p { max-width: 300px; margin: 22px 0 20px; color: rgba(255,255,255,.48); font-family: var(--display); font-size: 15px; line-height: 1.6; }
+.footer-intro > a { display: inline-flex; gap: 7px; align-items: center; color: rgba(255,255,255,.58); font-size: 8px; line-height: 1.5; }
+.footer-intro > a svg { flex: 0 0 auto; color: #f1a091; }
+.footer-column { display: flex; flex-direction: column; gap: 13px; color: rgba(255,255,255,.56); font-size: 9px; }
+.footer-column > strong { margin-bottom: 7px; color: #fff; font-size: 9px; letter-spacing: .13em; text-transform: uppercase; }
+.footer-column a:hover { color: #fff; }
+.footer-contact a:first-of-type { color: #fff; font-family: var(--display); font-size: 15px; }
+.footer-contact button { display: inline-flex; align-items: center; gap: 7px; align-self: flex-start; border: 0; border-bottom: 1px solid rgba(241,160,145,.6); padding: 5px 0; background: transparent; color: #f1a091; font-size: 9px; font-weight: 800; cursor: pointer; }
 .footer-bottom { display: flex; justify-content: space-between; border-top: 1px solid rgba(255,255,255,.1); margin-top: 38px; padding-top: 23px; color: rgba(255,255,255,.34); font-size: 8px; letter-spacing: .08em; text-transform: uppercase; }
+.footer-bottom > div { display: flex; gap: 24px; }
+.footer-bottom a { color: rgba(255,255,255,.56); }
 
 .chat-launcher { position: fixed; right: 24px; bottom: 24px; z-index: 90; height: 52px; display: flex; align-items: center; gap: 9px; border: 0; border-radius: 28px; padding: 5px 17px 5px 6px; background: var(--forest); color: #fff; box-shadow: 0 14px 36px rgba(8,39,31,.3); cursor: pointer; transition: .25s ease; }
 .chat-launcher:hover { transform: translateY(-3px); }
@@ -476,6 +525,13 @@ footer { padding: 58px 0 25px; background: #08271f; color: #fff; }
   .life-postcards { grid-template-columns: repeat(3, 1fr); }
   .life-hall-callout { grid-template-columns: .72fr 1.28fr; }
   .life-callout-copy { padding: 46px; }
+  .village-about-heading { gap: 50px; }
+  .village-about-visual { grid-template-columns: 1.25fr .75fr; }
+  .village-about-intro { padding: 38px; }
+  .village-history-grid article { padding: 30px; }
+  .history-truth-note { grid-template-columns: 44px 180px 1fr; }
+  .history-truth-note > a { grid-column: 3; }
+  .footer-main { grid-template-columns: 1.4fr repeat(3, 1fr); gap: 32px; }
 }
 
 @media (max-width: 760px) {
@@ -569,6 +625,18 @@ footer { padding: 58px 0 25px; background: #08271f; color: #fff; }
   .life-callout-copy h3 { font-size: 34px; }
   .life-callout-copy > div { align-items: stretch; flex-direction: column; gap: 16px; }
   .life-callout-copy .button { width: 100%; }
+  .village-about-heading { grid-template-columns: 1fr; gap: 28px; }
+  .village-about-heading h2 { font-size: 52px; }
+  .village-about-visual { grid-template-columns: 1fr; margin-top: 42px; }
+  .village-about-landscape { min-height: 390px; }
+  .village-about-intro { padding: 40px 25px; }
+  .village-history-grid { grid-template-columns: 1fr; }
+  .village-history-grid article { min-height: 350px; padding: 32px 25px; }
+  .village-history-icon { margin-bottom: 28px; }
+  .history-truth-note { grid-template-columns: 38px 1fr; gap: 16px; padding: 26px 22px; }
+  .history-truth-note p, .history-truth-note > a { grid-column: 1 / -1; }
+  .village-sources { align-items: flex-start; flex-direction: column; gap: 10px; }
+  .village-sources span { margin: 0 0 5px; }
   .kite-band-grid { grid-template-columns: 1fr; }
   .kite-illustration { display: none; }
   .red-kite-band h2 { font-size: 42px; }
@@ -578,9 +646,13 @@ footer { padding: 58px 0 25px; background: #08271f; color: #fff; }
   .parish-note > a { grid-column: auto; }
   .contact-grid { grid-template-columns: 1fr; gap: 40px; padding: 76px 0; }
   .enquiry-card { padding: 28px 22px; }
-  .footer-main { grid-template-columns: 1fr; }
-  .footer-links { flex-wrap: wrap; }
+  .footer-callout { align-items: flex-start; flex-direction: column; justify-content: center; gap: 25px; padding: 46px 0; }
+  .footer-callout h2 { font-size: 34px; }
+  .footer-callout > div:last-child { align-items: flex-start; flex-direction: column; gap: 12px; }
+  .footer-main { grid-template-columns: 1fr 1fr; gap: 42px 28px; }
+  .footer-intro { grid-column: 1 / -1; }
   .footer-bottom { flex-direction: column; gap: 10px; }
+  .footer-bottom > div { align-items: flex-start; flex-direction: column; gap: 8px; }
   .chat-launcher { right: 14px; bottom: 14px; }
   .chat-panel { right: 14px; bottom: 14px; }
   .legal-card { padding: 40px 24px; }
