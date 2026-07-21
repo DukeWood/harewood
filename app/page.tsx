@@ -219,59 +219,74 @@ export default function Home() {
         <div className="shell village-about-heading">
           <div>
             <span className="section-kicker">About the village</span>
-            <h2>Deep roots.<br /><em>An open sky.</em></h2>
+            <h2>A village story.<br /><em>Distinct, yet connected.</em></h2>
           </div>
-          <p>Harewood is a historic North Leeds village where stone buildings, wooded parkland and everyday community life sit side by side — connected to Leeds and Harrogate, yet with a character entirely its own.</p>
+          <p>Harewood village is not Harewood House. It is a living North Leeds community with its own homes, school, hall, church life and shared memory — shaped over centuries by a close, unequal and enduring relationship with the neighbouring estate.</p>
         </div>
 
         <div className="shell village-about-visual">
           <figure className="village-about-landscape">
             <img src="/neighbourhood/evening-over-harewood.webp" alt="Evening light across the rural Harewood landscape" />
-            <figcaption><span>Harewood · LS17</span><strong>Village, parkland and a living landscape</strong></figcaption>
+            <figcaption><span>Harewood village · LS17</span><strong>A community beyond the estate gates</strong></figcaption>
           </figure>
           <div className="village-about-intro">
-            <span>Then &amp; now</span>
-            <p>The Harewood story stretches from Saxon landholders and Norman foundations to a medieval castle, an 18th-century country house and a village community that still gathers, learns, walks and celebrates together.</p>
-            <a href="https://harewood.org/about/history/" target="_blank" rel="noreferrer">Explore the Harewood timeline <ExternalLink size={15} /></a>
+            <span>Village &amp; estate</span>
+            <p>The House is an independent country mansion within its park. The village stands outside it. Yet generations of villagers worked across the estate&apos;s farms, woods, gardens, stables and household, while estate decisions shaped where people lived and the stone streetscape still seen today.</p>
+            <a href="https://historicengland.org.uk/listing/the-list/list-entry/1226819" target="_blank" rel="noreferrer">See the workers&apos; cottages record <ExternalLink size={15} /></a>
           </div>
+        </div>
+
+        <div className="shell village-timeline" aria-label="Harewood village history timeline">
+          <div><span>1480</span><strong>Medieval emparking</strong><p>The settlement around All Saints&apos; was depopulated as land was enclosed as park.</p></div>
+          <div><span>c. 1760s</span><strong>A model village</strong><p>John Carr designed formal stone rows, including homes for estate workers and woodsmen.</p></div>
+          <div><span>1864</span><strong>A village school</strong><p>The estate built Harewood&apos;s school for the children of its workers.</p></div>
+          <div><span>1959</span><strong>The Village Hall opens</strong><p>The Hall&apos;s own plaque records its opening by HRH The Princess Royal with the Earl and Countess.</p></div>
         </div>
 
         <div className="shell village-history-grid">
           <article>
             <div className="village-history-icon"><BookOpen /></div>
-            <span>Centuries of place</span>
-            <h3>From Saxon Harewood</h3>
-            <p>Tor, Sprot and Grim are recorded as Harewood&apos;s Saxon landholders in the Domesday story. All Saints&apos; Church carries the known history from Norman times, while Harewood Castle and Gawthorpe Hall reveal the older landscape.</p>
-            <a href="https://harewood.org/about/history/" target="_blank" rel="noreferrer">Read the official history <ExternalLink size={14} /></a>
+            <span>The older settlement</span>
+            <h3>A village centre before the park</h3>
+            <p>Medieval Harewood gathered around All Saints&apos; Church. Historic England records depopulation after a licence to empark land in 1480; the church&apos;s isolated position inside today&apos;s park preserves the location of that earlier community.</p>
+            <a href="https://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?resourceID=19191&amp;uid=a3e7ad93-8db3-44b1-938e-edb851141e96" target="_blank" rel="noreferrer">Explore the settlement record <ExternalLink size={14} /></a>
+          </article>
+          <article>
+            <div className="village-history-icon"><Users /></div>
+            <span>The present village takes shape</span>
+            <h3>Built for an estate workforce</h3>
+            <p>In the mid-to-late 18th century, the Lascelles estate rebuilt Harewood as a model village. Listed rows on The Avenue were designed by John Carr as cottages for estate workers; other buildings housed woodsmen and estate functions. Older freehold homes such as 17th-century Cutler&apos;s Cottage are rare survivors.</p>
+            <a href="https://historicengland.org.uk/listing/the-list/list-entry/1225856" target="_blank" rel="noreferrer">See Cutler&apos;s Cottage <ExternalLink size={14} /></a>
+          </article>
+          <article>
+            <div className="village-history-icon"><HeartHandshake /></div>
+            <span>Working lives</span>
+            <h3>More than an architectural plan</h3>
+            <p>The estate-village relationship was lived through work and family: domestic service, farming, forestry, gardening, trades and education. Harewood was home to the people who sustained the wider estate, but village life also grew through its own worship, schooling, clubs and neighbourly institutions.</p>
+            <a href="https://historicengland.org.uk/listing/the-list/list-entry/1226637" target="_blank" rel="noreferrer">View the woodsmen&apos;s cottages <ExternalLink size={14} /></a>
           </article>
           <article>
             <div className="village-history-icon"><Crown /></div>
-            <span>Royal connections</span>
-            <h3>A Princess Royal at home</h3>
-            <p>Princess Mary, daughter of King George V and Queen Mary, married Henry Lascelles in 1922. Harewood became their Yorkshire home in 1930, and royal family visits left a living memorial in the trees of the Royal Avenue.</p>
-            <a href="https://harewood.org/stories/the-royal-avenue/" target="_blank" rel="noreferrer">Discover the Royal Avenue <ExternalLink size={14} /></a>
-          </article>
-          <article>
-            <div className="village-history-icon"><Trees /></div>
-            <span>Life in LS17</span>
-            <h3>Country calm, community energy</h3>
-            <p>Local schools, a recreation ground, playground, free tennis court and village organisations give Harewood its everyday rhythm. Footpaths, mature trees and broad views keep the countryside close.</p>
-            <a href="https://harewoodparishcouncil.gov.uk/amenities/" target="_blank" rel="noreferrer">See parish amenities <ExternalLink size={14} /></a>
+            <span>Royal connection</span>
+            <h3>From the House into village memory</h3>
+            <p>Princess Mary, daughter of King George V, lived at Harewood House from 1930. The connection reached beyond the mansion: the Village Hall plaque records that it opened on 6 September 1959 by HRH The Princess Royal together with the Earl and Countess of Harewood.</p>
+            <a href="/hall-gallery/02-village-hall-5.jpg" target="_blank" rel="noreferrer">See the Hall&apos;s opening plaque <ExternalLink size={14} /></a>
           </article>
         </div>
 
         <div className="shell history-truth-note">
           <Landmark />
-          <div><span>A history told in full</span><strong>Heritage includes difficult truths.</strong></div>
-          <p>Harewood House was built in the 18th century with wealth made through Caribbean sugar plantations and the exploitation of enslaved African people. The Harewood House Trust now researches and shares that legacy openly.</p>
+          <div><span>The House connection, clearly stated</span><strong>Separate places; intertwined histories.</strong></div>
+          <p>Harewood House is not the village. It is the neighbouring mansion and estate whose ownership, employment and building programme profoundly shaped village life. The House was financed through wealth made from Caribbean sugar and the exploitation of enslaved African people; that history belongs to the estate, while its consequences form part of the wider context in which the model village was created.</p>
           <a href="https://harewood.org/about/legacy-of-the-caribbean/" target="_blank" rel="noreferrer">Learn more <ArrowRight size={15} /></a>
         </div>
 
         <div className="shell village-sources">
           <span>Research sources</span>
-          <a href="https://historicengland.org.uk/listing/the-list/list-entry/1001218" target="_blank" rel="noreferrer">Historic England</a>
+          <a href="https://historicengland.org.uk/listing/the-list/list-entry/1226819" target="_blank" rel="noreferrer">Workers&apos; cottages</a>
+          <a href="https://historicengland.org.uk/listing/the-list/list-entry/1225856" target="_blank" rel="noreferrer">Cutler&apos;s Cottage</a>
           <a href="https://www.leeds.gov.uk/planning/conservation-protection-and-heritage/conservation-area" target="_blank" rel="noreferrer">Leeds conservation areas</a>
-          <a href="https://harewood.org/about/history/" target="_blank" rel="noreferrer">Harewood House Trust</a>
+          <a href="https://harewood.org/about/history/" target="_blank" rel="noreferrer">Estate history</a>
           <a href="https://harewoodparishcouncil.gov.uk/" target="_blank" rel="noreferrer">Harewood Parish Council</a>
         </div>
       </section>
@@ -355,7 +370,7 @@ export default function Home() {
         </div>
         <div className="shell footer-bottom">
           <span>© 2026 Harewood Village Hall · Community run</span>
-          <div><a href="/privacy">Privacy</a><span>Community information reviewed 20 July 2026</span></div>
+          <div><a href="/privacy">Privacy</a><span>Community information reviewed 21 July 2026</span></div>
         </div>
       </footer>
       <RedKiteChat />
