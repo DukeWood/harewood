@@ -396,15 +396,20 @@ img { display: block; width: 100%; }
 .village-about-intro > span { color: #f1a091; font-size: 9px; font-weight: 850; letter-spacing: .16em; text-transform: uppercase; }
 .village-about-intro p { margin: 22px 0; color: rgba(255,255,255,.68); font-family: var(--display); font-size: 17px; line-height: 1.68; }
 .village-about-intro a { display: inline-flex; align-items: center; gap: 8px; align-self: flex-start; border-bottom: 1px solid rgba(255,255,255,.5); padding-bottom: 5px; font-size: 9px; font-weight: 800; }
-.village-history-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); margin-top: 18px; }
-.village-history-grid article { min-height: 410px; display: flex; flex-direction: column; align-items: flex-start; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 38px; background: #fff; }
+.village-timeline { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); margin-top: 18px; }
+.village-timeline > div { min-height: 185px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 27px 25px; background: var(--cream); }
+.village-timeline span { color: var(--red); font-size: 9px; font-weight: 850; letter-spacing: .13em; }
+.village-timeline strong { display: block; margin-top: 12px; font-family: var(--display); font-size: 20px; font-weight: 400; }
+.village-timeline p { margin: 11px 0 0; color: var(--muted); font-size: 9px; line-height: 1.6; }
+.village-history-grid { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); margin-top: 18px; }
+.village-history-grid article { min-height: 440px; display: flex; flex-direction: column; align-items: flex-start; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 42px; background: #fff; }
 .village-history-icon { width: 48px; height: 48px; display: grid; place-items: center; margin-bottom: 42px; background: var(--cream); color: var(--forest); }
 .village-history-icon svg { width: 20px; }
 .village-history-grid article > span { color: var(--red); font-size: 8px; font-weight: 850; letter-spacing: .15em; text-transform: uppercase; }
 .village-history-grid h3 { margin: 12px 0 15px; font-family: var(--display); font-size: 27px; font-weight: 400; line-height: 1.1; }
 .village-history-grid p { margin: 0; color: var(--muted); font-family: var(--display); font-size: 15px; line-height: 1.66; }
 .village-history-grid a { display: inline-flex; align-items: center; gap: 7px; margin-top: auto; border-bottom: 1px solid var(--forest); padding-bottom: 4px; font-size: 9px; font-weight: 800; }
-.history-truth-note { display: grid; grid-template-columns: 50px 210px 1fr auto; gap: 24px; align-items: center; margin-top: 18px; padding: 31px 36px; background: var(--cream); }
+.history-truth-note { display: grid; grid-template-columns: 50px 235px 1fr auto; gap: 24px; align-items: center; margin-top: 18px; padding: 31px 36px; background: var(--cream); }
 .history-truth-note > svg { color: var(--red); }
 .history-truth-note > div { display: flex; flex-direction: column; }
 .history-truth-note > div span { color: var(--red); font-size: 8px; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; }
@@ -555,6 +560,7 @@ footer { padding: 0 0 25px; background: #08271f; color: #fff; }
   .village-about-heading { gap: 50px; }
   .village-about-visual { grid-template-columns: 1.25fr .75fr; }
   .village-about-intro { padding: 38px; }
+  .village-timeline { grid-template-columns: repeat(2, 1fr); }
   .village-history-grid article { padding: 30px; }
   .history-truth-note { grid-template-columns: 44px 180px 1fr; }
   .history-truth-note > a { grid-column: 3; }
@@ -661,6 +667,8 @@ footer { padding: 0 0 25px; background: #08271f; color: #fff; }
   .village-about-visual { grid-template-columns: 1fr; margin-top: 42px; }
   .village-about-landscape { min-height: 390px; }
   .village-about-intro { padding: 40px 25px; }
+  .village-timeline { grid-template-columns: 1fr; }
+  .village-timeline > div { min-height: 0; }
   .village-history-grid { grid-template-columns: 1fr; }
   .village-history-grid article { min-height: 350px; padding: 32px 25px; }
   .village-history-icon { margin-bottom: 28px; }
