@@ -9,7 +9,7 @@ A modern community website for Harewood Village Hall and the wider Harewood vill
 - Calendar and event-card views with category filtering
 - Red Kite, an on-page guide for hall hire, events and local information
 - Hall interior gallery and neighbourhood photo stories
-- Researched “About the Village” section covering early history, royal connections, present-day atmosphere and Harewood House’s Caribbean slavery legacy
+- Researched “About the Village” section distinguishing the village's settlement and working-community history from the neighbouring Harewood House estate, while explaining their deep connections
 - Local directory for places to visit, stay, eat and learn
 - Responsive navigation, accessible forms, dialogs and mobile layouts
 
@@ -58,14 +58,18 @@ Add the supplied monthly entries to `app/events-data.ts`, then register that mon
 
 ## Research and community sources
 
-Village history and local information are grounded in authoritative sources:
+Village history and local information are grounded in authoritative sources. The site deliberately distinguishes Harewood village from the neighbouring Harewood House and estate:
 
-- [Harewood House Trust — History](https://harewood.org/about/history/)
-- [Harewood House Trust — The Royal Avenue](https://harewood.org/stories/the-royal-avenue/)
-- [Harewood House Trust — Legacy of the Caribbean](https://harewood.org/about/legacy-of-the-caribbean/)
-- [Historic England — Harewood House registered park and garden](https://historicengland.org.uk/listing/the-list/list-entry/1001218)
+- [Historic England — The Avenue estate workers' cottages](https://historicengland.org.uk/listing/the-list/list-entry/1226819)
+- [Historic England — Cutler's Cottage and the model village](https://historicengland.org.uk/listing/the-list/list-entry/1225856)
+- [Historic England — Estate woodsmen's cottages](https://historicengland.org.uk/listing/the-list/list-entry/1226637)
+- [Historic England Research Records — medieval Harewood settlement](https://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?resourceID=19191&uid=a3e7ad93-8db3-44b1-938e-edb851141e96)
 - [Leeds City Council — Conservation areas](https://www.leeds.gov.uk/planning/conservation-protection-and-heritage/conservation-area)
 - [Harewood Parish Council](https://harewoodparishcouncil.gov.uk/)
+- [Harewood House Trust — Estate history](https://harewood.org/about/history/)
+- [Harewood House Trust — Legacy of the Caribbean](https://harewood.org/about/legacy-of-the-caribbean/)
+
+The Village Hall's own 1959 opening plaque is treated as the primary source for its direct royal connection.
 
 Event listings shown in the Hall diary are taken from schedules supplied directly by the Harewood Village Hall team.
 
