@@ -226,8 +226,8 @@ export default function Home() {
 
         <div className="shell village-about-visual">
           <figure className="village-about-landscape">
-            <img src="/neighbourhood/evening-over-harewood.webp" alt="Evening light across the rural Harewood landscape" />
-            <figcaption><span>Harewood village · LS17</span><strong>A community beyond the estate gates</strong></figcaption>
+            <img src="/about-harewood-village-aerial.jpg" alt="Aerial view of Harewood village with the neighbouring estate parkland beyond" />
+            <figcaption><span>Harewood village · LS17</span><strong>The village in the foreground, the estate beyond</strong></figcaption>
           </figure>
           <div className="village-about-intro">
             <span>Village &amp; estate</span>
